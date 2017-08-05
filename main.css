@@ -16,7 +16,7 @@ table{
   border: 2px solid black;
   width: 100%;
   border-collapse: collapse;
-  background-color: turquoise;
+  background-color: #4EE2EC;
 }
 
 td, th{
@@ -24,4 +24,12 @@ td, th{
   height: 95px;
   text-align: center;
   border: 2px solid gray;
+}
+
+td.operator{
+  background-color: #43C6DB;
+}
+
+td:hover{
+  background-color: #43C6DB;
 }

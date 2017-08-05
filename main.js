@@ -1,20 +1,64 @@
-// let clear = document.querySelector("input").clear;
-// // let result = document.querySelector
-// // Need to work on the result box
-// let nine = document.querySelector("input").nine;
-// let eight = document.querySelector("input").eight;
-// let seven = document.querySelector("input").seven;
-// let six = document.querySelector("input").six;
-// let five = document.querySelector("input").five;
-// let four = document.querySelector("input").four;
-// let three = document.querySelector("input").three;
-// let two = document.querySelector("input").two;
-// let one = document.querySelector("input").one;
-// let zero = document.querySelector("input").zero;
-// let dot = document.querySelector("input").dotmenot;
-// let equal = document.querySelector("input").equal;
-// let plus = document.querySelector("input").plus;
+displayValue = [ ];
 
-function calculate(value){
-  document.querySelector("calculator").value=
+operatorSigns= ["+", "-", "*", "/"]
+
+function number(numValue){
+  console.log('yay');
+  // value = document.querySelector("#calculator").value;
+  document.querySelector("#display").innerHTML = numValue;
+  displayValue.push(numValue);
 }
+
+function operator(signs){
+  document.querySelector(".operator").innerHTML = signs;
+  if (signs === "divide"){
+    console.log("I'm here, right?");
+  }
+  else
+  return "I'm screwed";
+}
+
+
+// /* Note: you can't do the math until you have both numbers */
+// function operator(signs){
+//   if (signs === "divide"){
+//     return numValue / numValue;
+//   }
+//   else if (signs === "*"){
+//     return numValue * numValue;
+//   }
+//   else if (signs === "subtract"){
+//     return numValue - numValue;
+//   }
+//   else if (signs === "addition"){
+//     return numValue + numValue;
+//   }
+// }
+
+// Don't do the math until you have the whole expression to tell the computer that those strings needed to be "totaled" up to.
+
+
+// function display(results){
+//   console.log("can I result good enough?");
+//   document.querySelector("#display").innerHTML = value;
+// }
+//
+// function operator(signs){
+//
+// }
+
+
+// function multiplyBy(multy){
+//   console.log("Multi-time!");
+//   document.querySelector("#multiply").innerHTML
+// }
+//
+// function result(givemenumbers){
+//
+// }
+
+// operator(yah){
+//   if (yah === *){
+//     calculate()
+//   }
+// }
