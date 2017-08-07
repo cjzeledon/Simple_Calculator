@@ -1,5 +1,5 @@
 body{
-  background-color: #413839;
+  background-color: #e9e2e2;
 }
 
 section{
@@ -8,7 +8,7 @@ section{
   margin-top: 100px;
   width: 400px;
   height: 500px;
-  font-family: monospace;
+  font-family: Arial Black, Trebuchet MS;
   font-size: large;
 }
 
@@ -23,18 +23,22 @@ td, th{
   height: 95px;
   text-align: center;
   border: 2px solid gray;
-  border-radius: 8px;
-  background-color: #4EE2EC;
+  border-radius: 6px;
+  background-color: #ff9999;
   border-top: 1px solid white;
   border-right: 1px solid white;
-  border-bottom: 1px solid #4EE2EC;
-  border-left: 1px solid #4EE2EC;
+  border-bottom: 1px solid #ffcccc;
+  border-left: 1px solid #ffcccc;
 }
 
 td.operator{
-  background-color: #43C6DB;
+  background-color: #ffb3b3;
 }
 
 td:hover{
-  background-color: #43C6DB;
+  background-color: #ffb3b3;
+}
+
+#display{
+  color: white;
 }
