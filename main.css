@@ -23,7 +23,7 @@ td, th{
   height: 95px;
   text-align: center;
   border: 2px solid gray;
-  border-radius: 6px;
+  border-radius: 100%;
   background-color: #ff9999;
   border-top: 1px solid white;
   border-right: 1px solid white;
