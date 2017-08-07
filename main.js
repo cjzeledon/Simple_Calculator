@@ -1,16 +1,12 @@
+let operation = "0";
+let maxlength = 50;
+
+
 function digit(val){
-  let numbers = document.getElementsByClassName("num").value;
-  document.querySelector("#display").innerHTML = val;
-}
+  document.querySelector("#display").value += val;
+  // let numbers = document.getElementsByClassName("num").value;
+  document.querySelector("#display").innerHTML += val;
 
-function operator(optr){
-  let thing = document.getElementsByClassName("signs").value;
-  document.querySelector("#display").innerHTML = optr;
-}
-
-function equal(all){
-  let totalize = document.getElementsByClassName("total").value;
-  document.querySelector("#display").innerHTML = all;
 }
 
 function clearMe(nuclear){
@@ -18,22 +14,47 @@ function clearMe(nuclear){
   document.querySelector("#display").innerHTML = nuclear;
 }
 
+// Maybe use this variable to store numbers before hitting the equal sign which will then need a new function to actually calculate them all together.
+
+
 function cal(current){
-  // let cally = document.querySelector("#display");
-  // document.querySelector("#display").innerHTML = current;
-  // cally.textContent = digit();
-  console.log("working it");
+  let addItall;
+    for (i = 0; i < maxlength; i++){
+     addItall = addItall + digit();
+     document.querySelector(".display").innerHTML = current;
+     return current;
+   }
 }
 
+// for (i = 0; i < 50; i++){
+//   if ( i > 50){
+//     numbers = "My dear..this is too long.";
+//   }
+//   else {
+//     numbers = numbers + val;
+//   }
+// }
+// }
 
+// function operator(optr){
+//   let thing = document.getElementsByClassName("signs").value;
+//   document.querySelector(".display").innerHTML = optr;
+// }
+//
+// function equal(all){
+//   let totalize = document.getElementsByClassName("total").value;
+//   document.querySelector(".display").innerHTML = all;
+// }
+//
 
+// function cal(current){
+//   // let cally = document.querySelector("#display");
+//   // document.querySelector("#display").innerHTML = current;
+//   // cally.textContent = digit();
+//   console.log("working it");
 
-
-
-
-
-
-
+  // let displayAnswers = document.getElementsByClassName("display").value;
+  // document.querySelector(".display").innerHTML = current;
 
 
 

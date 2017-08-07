@@ -13,33 +13,33 @@
       <tr>
         <th input type="button" id="clearOut" value="clear" onclick="clearMe('  ')">Clear</th>
         <!--Do I need to name the value as "clear"? Is setting a value for the clearOut tag necessary?-->
-        <th input type="number" colspan="3" id="display" onclick="cal('  ')"></th>
-          <!--Since the display area will be where the numbers will pop up, decide if you want to set the max length of the input string which would be written as maxlength=50 inside the html tag of display. But the question is, will it affect the javascript?-->
+        <th input type="number" colspan="3" id="display" name="display"></th>
+          <!--Since the display area will be where the numbers will pop up, decide if you want to set the max length of the input string which would be written as maxlength=50 inside the html tag of display. But the question is, will it affect the javascript? Or maybe set the maxlength for it inside the js file?-->
       </tr>
       <tr>
-        <td input type="button" class="num" value="7" onclick="digit(7)">7</td>
-        <td input type="button" class="num" value="8" onclick="digit(8)">8</td>
-        <td input type="button" class="num" value="9" onclick="digit(9)">9</td>
-        <td input type="button" class="signs" value="divide" onclick="operator('/')">/</td>
+        <td input type="button" name="7" value="7" onclick="digit(7)">7</td>
+        <td input type="button" name="8" value="8" onclick="digit(8)">8</td>
+        <td input type="button" name="9" value="9" onclick="digit(9)">9</td>
+        <td input type="button" name="/" value="/" onclick="digit('/')">/</td>
       </tr>
       <tr>
-        <td input type="button" class="num" value="4" onclick="digit(4)">4</td>
-        <td input type="button" class="num" value="5" onclick="digit(5)">5</td>
-        <td input type="button" class="num" value="6" onclick="digit(6)">6</td>
-        <td input type="button" class ="signs" value="*" onclick="operator('*')">*</td>
+        <td input type="button" name="4" value="4" onclick="digit(4)">4</td>
+        <td input type="button" name="5" value="5" onclick="digit(5)">5</td>
+        <td input type="button" name="6" value="6" onclick="digit(6)">6</td>
+        <td input type="button" name="*" value="*" onclick="digit('*')">*</td>
     </tr>
     <tr>
-        <td input type="button" class="num" value="1" onclick="digit(1)">1</td>
-        <td input type="button" class="num" value="2" onclick="digit(2)">2</td>
-        <td input type="button" class="num" value="3" onclick="digit(3)">3</td>
-        <td input type="button" class ="signs" value="-" onclick="operator('-')">-</td>
+        <td input type="button" name="1" value="1" onclick="digit(1)">1</td>
+        <td input type="button" name="2" value="2" onclick="digit(2)">2</td>
+        <td input type="button" name="3" value="3" onclick="digit(3)">3</td>
+        <td input type="button" name="-" value="-" onclick="digit('-')">-</td>
     </tr>
     <tr>
-        <td input type="button" class="num" value="0" onclick="digit(0)">0</td>
-        <td input type="button" class="signs" value="." onclick="operator('.')">.</td>
-        <td input type="button" class="total" value="=" onclick="equal('=')">=</td>
+        <td input type="button" name="0" value="0" onclick="digit(0)">0</td>
+        <td input type="button" name="." value="." onclick="digit('.')">.</td>
+        <td input type="button" name="=" value="=" onclick="equal('=')">=</td>
         <!-- Should the equal button be a submit button? -->
-        <td input type="button" class ="signs" value="+" onclick="operator('+')">+</td>
+        <td input type="button" name="+" value="+" onclick="digit('+')">+</td>
     </tr>
     </table>
   </form>
