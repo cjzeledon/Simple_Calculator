@@ -18,6 +18,13 @@ table{
   border-radius: 8px;
 }
 
+/*input[type=button]{
+  background: transparent;
+  font-family: Arial Black, Trebuchet MS;
+  font-size: large;
+  border: 0;
+}*/
+
 td, th{
   width: 20%;
   height: 95px;
