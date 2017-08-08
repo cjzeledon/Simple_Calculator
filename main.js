@@ -29,7 +29,7 @@ function digit(val){
     }
   }
 }
-
+can you see me?
 numberTest= parseInt("1293+4567");
 numberArray = [numberTest]
 console.log(numberArray);
