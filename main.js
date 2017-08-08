@@ -17,16 +17,22 @@ function digit(val){
   let num2 = [];
 
   for (i = 0; i < screen.length; i++){
-    operator = ["+", "-", "*", "/"];
+    operator = {
+      add: "+",
+      subtract: "-",
+      multiply: "*",
+      divide: "/"
+    };
 
-      if (screen ){
+    if (screen ){
 
-      }
+    }
   }
 }
 
 numberTest= parseInt("1293+4567");
-console.log(numberTest);
+numberArray = [numberTest]
+console.log(numberArray);
 
 /*Things to do list:
 1. Create a display area for numbers
