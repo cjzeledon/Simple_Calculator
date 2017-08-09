@@ -13,26 +13,73 @@ function clearMe(nuclear){
 
 function digit(val){
   let screen = document.querySelector("#display").innerHTML += val;
-  let num1 = [];
-  let num2 = [];
 
-  for (i = 0; i < screen.length; i++){
-    operator = {
-      add: "+",
-      subtract: "-",
-      multiply: "*",
-      divide: "/"
-    };
+  let NumsDrop = screen.split(/\d/);
+  let OpsDrop = screen.split(/[-=*/]/);
+  let numbers = [];
+  let ops = [];
 
-    if (screen ){
-
+  for (let i = 0; i < NumsDrop.length; i++){
+    if (NumsDrop[i] !== " "){
+      ops.push(NumsDrop[i]);
     }
   }
+
+  for (let i = 0; i < OpsDrop.length; i++){
+    if (OpsDrop[i] !== " "){
+      numbers.push(OpsDrop[i]);
+    }
+  }
+
+  // while (ops.length > 0){
+  //   let operator = ops.shift();
+  //   let
+  // }
+
+
+
+
+
+  // // sample numbers
+  // let numbers = [11, 23, 45];
+  //
+  // // sample operators between the numbers
+  // let ops = ['+', '-', '*'];
+  //
+  // // while we still have operators to process...
+  // while (ops.length > 0) {
+  //   // taking the first number from the ops array.
+  //   // op will be "+"
+  //   let op = ops.shift();
+  //
+  //   // taking the first number from "numbers"
+  //   // num1 will be "11";
+  //   let num1 = numbers.shift();
+  //
+  //   // taking the first number from numbers AGAIN
+  //   // num2 will be "23"
+  //   let num2 = numbers.shift();
+  //
+  //   if (op === '+') {
+  //       // splice puts num1 + num2 into the array
+  //       // at element 0, removing 0 elements in the
+  //       // process
+  //       numbers.splice(0, 0, num1 + num2);
+  //   } else if (op === '-') {
+  //       numbers.splice(0, 0, num1 - num2);
+  //   }
+  // }
+  //
+  // console.log(numbers[0]);
+  // to get all the numbers in an array:
+  // "1+23-45/3".split(/[-=*/]/);
+
+  // to get all the OPERATORS in an array:
+  // "1+23-45/3".split(/\d/);
+  // remove all empty string elements in the array
+
 }
 
-numberTest= parseInt("1293+4567");
-numberArray = [numberTest]
-console.log(numberArray);
 
 /*Things to do list:
 1. Create a display area for numbers
@@ -49,18 +96,18 @@ console.log(numberArray);
 
 
 
-/* Note: you can't do the math until you have both numbers */
-function total(signs){
-  if (signs === "/"){
-    return num1 / num2;
-  }
-  else if (signs === "*"){
-    return num1 * num2;
-  }
-  else if (signs === "-"){
-    return num1 - num2;
-  }
-  else if (signs === "+"){
-    return num1 + num2;
-  }
-}
+// /* Note: you can't do the math until you have both numbers */
+// function total(signs){
+//   if (signs === "/"){
+//     return num1 / num2;
+//   }
+//   else if (signs === "*"){
+//     return num1 * num2;
+//   }
+//   else if (signs === "-"){
+//     return num1 - num2;
+//   }
+//   else if (signs === "+"){
+//     return num1 + num2;
+//   }
+// }
