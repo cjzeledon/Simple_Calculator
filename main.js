@@ -11,26 +11,35 @@ function clearMe(nuclear){
   document.querySelector("#display").innerHTML = nuclear;
 }
 
+
+let numbers = [];
+let ops = [];
+
 function digit(val){
-  let screen = document.querySelector("#display").innerHTML += val;
+  let screen = document.querySelector("#display");
+  screen.innerHTML += val;
+  // let NumsDrop = screen.split(/\d/);
+  // let OpsDrop = screen.split(/[-=*/]/);
+  //
+  // for (let i = 0; i < NumsDrop.length; i++){
+  //   if (NumsDrop[i] !== " "){
+  //     ops.push(NumsDrop[i]);
+  //   }
+  // }
+  //
+  // for (let i = 0; i < OpsDrop.length; i++){
+  //   if (OpsDrop[i] !== " "){
+  //     numbers.push(OpsDrop[i]);
+  //   }
+  // }
+  // console.log(ops);
+  // console.log(numbers);
+  // return screen;
+}
 
-  let NumsDrop = screen.split(/\d/);
-  let OpsDrop = screen.split(/[-=*/]/);
-  let numbers = [];
-  let ops = [];
-
-  for (let i = 0; i < NumsDrop.length; i++){
-    if (NumsDrop[i] !== " "){
-      ops.push(NumsDrop[i]);
-    }
-  }
-
-  for (let i = 0; i < OpsDrop.length; i++){
-    if (OpsDrop[i] !== " "){
-      numbers.push(OpsDrop[i]);
-    }
-  }
-
+// function calculate(total){
+//
+// }
   // while (ops.length > 0){
   //   let operator = ops.shift();
   //   let
@@ -78,7 +87,9 @@ function digit(val){
   // "1+23-45/3".split(/\d/);
   // remove all empty string elements in the array
 
-}
+
+
+
 
 
 /*Things to do list:
