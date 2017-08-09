@@ -11,30 +11,30 @@ function clearMe(nuclear){
   document.querySelector("#display").innerHTML = nuclear;
 }
 
-
 let numbers = [];
 let ops = [];
 
 function digit(val){
   let screen = document.querySelector("#display");
   screen.innerHTML += val;
+
   // let NumsDrop = screen.split(/\d/);
-  // let OpsDrop = screen.split(/[-=*/]/);
-  //
-  // for (let i = 0; i < NumsDrop.length; i++){
-  //   if (NumsDrop[i] !== " "){
-  //     ops.push(NumsDrop[i]);
-  //   }
-  // }
-  //
-  // for (let i = 0; i < OpsDrop.length; i++){
-  //   if (OpsDrop[i] !== " "){
-  //     numbers.push(OpsDrop[i]);
-  //   }
-  // }
-  // console.log(ops);
-  // console.log(numbers);
-  // return screen;
+  let OpsDrop = screen.split(/[-=*/]/);
+
+  for (let i = 0; i < NumsDrop.length; i++){
+    if (NumsDrop[i] !== " "){
+      ops.push(NumsDrop[i]);
+    }
+  }
+
+  for (let i = 0; i < OpsDrop.length; i++){
+    if (OpsDrop[i] !== " "){
+      numbers.push(OpsDrop[i]);
+    }
+  }
+  console.log(ops);
+  console.log(numbers);
+  return screen;
 }
 
 // function calculate(total){
