@@ -6,35 +6,54 @@
 // console.log(sum); This gives the sum of 22.
 // Perhaps I can use the idea of pushing the first set of numbers into an array and the other set of numbers into another array and combine the two of them together with an operator (whether it is multiply, minus, add or divide).
 
+// let numbers = [];
+// let ops = [];
+
 function clearMe(nuclear){
   let beClear = document.getElementById("clearOut").value;
   document.querySelector("#display").innerHTML = nuclear;
 }
 
-let numbers = [];
-let ops = [];
-
-function digit(val){
+function digit(value){
   let screen = document.querySelector("#display");
-  screen.innerHTML += val;
+  screen.innerHTML += value;
+}
 
-  // let NumsDrop = screen.split(/\d/);
-  let OpsDrop = screen.split(/[-=*/]/);
+function calculate(){
+  let answer = DigtoNums("23+5");
+
+  // SolveEquation(answer);
+  //
+  // ShowResult();
+}
+
+// function SolveEquation(thisThing) {
+//
+// }
+
+function DigtoNums(convert){
+  let numbers = [];
+  let ops = [];
+
+  let NumsDrop = convert.split(/\d/);
+  let OpsDrop = convert.split(/[-=*/]/);
+
+  // console.log(NumsDrop)
 
   for (let i = 0; i < NumsDrop.length; i++){
-    if (NumsDrop[i] !== " "){
+    if (NumsDrop[i] !== ""){
       ops.push(NumsDrop[i]);
     }
   }
 
   for (let i = 0; i < OpsDrop.length; i++){
-    if (OpsDrop[i] !== " "){
+    if (OpsDrop[i] !== ""){
       numbers.push(OpsDrop[i]);
     }
   }
-  console.log(ops);
   console.log(numbers);
-  return screen;
+  console.log(ops);
+  return DigitToNums;
 }
 
 // function calculate(total){
